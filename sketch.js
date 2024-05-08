@@ -25,6 +25,8 @@ function setup() {
 	toolbox.addTool(new mirrorDrawTool());
 	toolbox.addTool(new FloodFillTool());
 	toolbox.addTool(new RectangleTool());
+	toolbox.addTool(new PaintbrushTool());
+	toolbox.addTool(new RubberTool());
 	background(255);
 	strokeWeight(2);
 	

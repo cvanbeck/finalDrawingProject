@@ -1,5 +1,5 @@
 function RectangleTool(){
-    this.icon = null;
+    this.icon = "assets/rectangleTool.jpg";
     this.name = "rectangleTool";
 
     this.startX = -1;
