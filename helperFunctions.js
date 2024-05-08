@@ -11,6 +11,7 @@ function HelperFunctions() {
 		//call loadPixels to update the drawing state
 		//this is needed for the mirror tool
 		clear()
+		background(255)
 		loadPixels();
 	});
 

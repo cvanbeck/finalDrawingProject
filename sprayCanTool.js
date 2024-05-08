@@ -21,7 +21,7 @@ sprayCan = {
 function SprayCanTool(){
     this.name = "sprayCanTool"
     this.icon = "assets/sprayCan.jpg"
-    this.points = 13
+    this.points = 7
     this.spread = 10
     this.draw = () => {
         if(mouseIsPressed){

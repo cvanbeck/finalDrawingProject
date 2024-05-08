@@ -24,8 +24,10 @@ function setup() {
 	toolbox.addTool(new SprayCanTool());
 	toolbox.addTool(new mirrorDrawTool());
 	toolbox.addTool(new FloodFillTool());
+	toolbox.addTool(new RectangleTool());
 	background(255);
-
+	strokeWeight(2);
+	
 }
 
 function draw() {
@@ -34,7 +36,7 @@ function draw() {
 	//if an object contains a particular method or property
 	//if there isn't a draw method the app will alert the user
 	if (toolbox.selectedTool.hasOwnProperty("draw")) {
-		toolbox.selectedTool.draw();
+		toolbox.selectedTool.draw(colourP.selectedColour);
 	} else {
 		alert("it doesn't look like your tool has a draw method!");
 	}
