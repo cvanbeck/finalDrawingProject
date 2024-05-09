@@ -11,9 +11,10 @@ function PaintbrushTool() {
     // Set rectangle mode to centre
     rectMode(CENTER);
   
-    // Adjust size based on mouse wheel movement <- ?? 
+    // Adjust size based on how far down page the paintbrush is, gives the illusion
+    // of a real paintbrush being moved around
     if (mouseIsPressed) {
-      this.size += (mouseY - pmouseY) * 0.1; // Adjust the factor to control the sensitivity of resizing
+      this.size += (mouseY - pmouseY) * 0.1; 
       this.size = constrain(this.size, 5, 100); // Ensure the size stays within a reasonable range
       
       // Draw rectangle at current mouse position

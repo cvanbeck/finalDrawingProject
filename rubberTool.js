@@ -12,10 +12,9 @@ function RubberTool() {
       // Set rectangle mode to centre
       rectMode(CENTER);
     
-      // Adjust size based on mouse wheel movement
       if (mouseIsPressed) {
-        this.size += (mouseY - pmouseY) * 0.1; // Adjust the factor to control the sensitivity of resizing
-        this.size = constrain(this.size, 5, 100); // Ensure the size stays within a reasonable range
+        this.size += (mouseY - pmouseY) * 0.1;
+        this.size = constrain(this.size, 5, 100); 
         
         // Draw rectangle at current mouse position
         rect(mouseX, mouseY, this.size / 2, this.size / 2);
