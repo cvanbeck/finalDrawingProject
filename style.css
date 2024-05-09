@@ -6,6 +6,7 @@ html, body {
 #sidebar {
 	grid-area: sidebar;
 	overflow-y: scroll;
+	width: fit-content;
 }
 
 #content {

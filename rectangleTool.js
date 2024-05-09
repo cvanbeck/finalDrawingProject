@@ -1,5 +1,5 @@
 function RectangleTool(){
-    this.icon = "assets/rectangleTool.jpg";
+    this.icon = "assets/rectangleTool.png";
     this.name = "rectangleTool";
 
     this.startX = -1;
@@ -27,4 +27,6 @@ function RectangleTool(){
             this.startY = -1;
         }
     };
+
+    
 }
