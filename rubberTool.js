@@ -12,10 +12,7 @@ function RubberTool() {
       // Set rectangle mode to centre
       rectMode(CENTER);
     
-      if (mouseIsPressed) {
-        this.size += (mouseY - pmouseY) * 0.1;
-        this.size = constrain(this.size, 5, 100); 
-        
+      if (mouseIsPressed) {        
         // Draw rectangle at current mouse position
         rect(mouseX, mouseY, this.size / 2, this.size / 2);
       }
